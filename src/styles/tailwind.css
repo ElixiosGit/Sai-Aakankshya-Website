@@ -20,6 +20,7 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -29,6 +30,18 @@ body {
   background-color: #FFFFFF;
   color: #202A30;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+#__next {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+main {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* ===== HERO SECTION ===== */

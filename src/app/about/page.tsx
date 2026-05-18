@@ -204,7 +204,7 @@ export default function AboutPage() {
 
       {/* ══ STATS BAR — off-white, same as services body ══ */}
       <section style={{ background: MID, borderBottom: `1px solid ${DIM}` }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4,1fr)' }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))' }}>
           {stats.map((s, i) => (
             <FadeUp key={i} delay={i * 0.08}>
               <div style={{
@@ -283,7 +283,7 @@ export default function AboutPage() {
         <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
           <Eyebrow label="Mission & Objectives" />
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1px', background: DIM }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '1px', background: DIM }}>
             {missions.map((m, i) => (
               <FadeUp key={i} delay={i * 0.1}>
                 <div style={{ background: MID, padding: 'clamp(2rem,4vw,3.5rem)', height: '100%' }}>
@@ -397,7 +397,7 @@ export default function AboutPage() {
             </FadeUp>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5,1fr)', gap: '1px', background: DIM }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 160px), 1fr))', gap: '1px', background: DIM }}>
             {partners.map((brand, i) => (
               <FadeUp key={i} delay={i * 0.07}>
                 <div
@@ -439,7 +439,7 @@ export default function AboutPage() {
         <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
           <Eyebrow label="Our Values" />
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1px', background: DIM }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '1px', background: DIM }}>
             {values.map((val, i) => (
               <FadeUp key={i} delay={(i % 3) * 0.08}>
                 <div
