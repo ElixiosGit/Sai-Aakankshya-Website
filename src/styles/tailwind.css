@@ -210,4 +210,61 @@ main {
   .hero-section {
     height: 100svh;
   }
+  
+  /* Ensure all sections have proper mobile padding */
+  section {
+    padding-left: clamp(1.25rem, 4vw, 2rem) !important;
+    padding-right: clamp(1.25rem, 4vw, 2rem) !important;
+  }
+  
+  /* Prevent text overflow */
+  h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  
+  /* Make sure images don't overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Fix button wrapping */
+  button, a {
+    word-wrap: break-word;
+  }
+  
+  /* Reduce excessive font sizes on mobile */
+  h1 {
+    font-size: clamp(2.5rem, 10vw, 4rem) !important;
+  }
+  
+  /* Stack flex containers that don't have explicit mobile classes */
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  /* Ensure form inputs are mobile-friendly */
+  input, textarea, select {
+    font-size: 16px !important; /* Prevents zoom on iOS */
+  }
+  
+  /* Fix map embeds */
+  iframe {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Extra small screens - even tighter spacing */
+  section {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+  
+  /* Reduce padding on cards/boxes */
+  [style*="padding"] {
+    padding: clamp(1.5rem, 4vw, 2rem) !important;
+  }
 }
