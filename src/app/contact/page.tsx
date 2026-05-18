@@ -80,10 +80,10 @@ export default function ContactPage() {
       {/* ══ MAIN CONTENT ══ */}
       <section style={{ paddingBottom: '6rem', paddingLeft: PAD, paddingRight: PAD }}>
         <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1px 1.4fr', gap: 0 }}>
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1px_1.4fr] gap-0">
 
             {/* ── LEFT: Info ── */}
-            <div style={{ paddingRight: 'clamp(2rem,4vw,4rem)' }}>
+            <div className="lg:pr-16 mb-12 lg:mb-0">
 
               {/* Contact */}
               <div style={{ marginBottom: '3rem' }}>
@@ -167,10 +167,10 @@ export default function ContactPage() {
             </div>
 
             {/* ── VERTICAL DIVIDER ── */}
-            <div style={{ background: 'rgba(255,255,255,0.08)' }} />
+            <div className="hidden lg:block" style={{ background: 'rgba(255,255,255,0.08)' }} />
 
             {/* ── RIGHT: Form ── */}
-            <div style={{ paddingLeft: 'clamp(2rem,4vw,4rem)' }}>
+            <div className="lg:pl-16">
               {submitted ? (
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'center', height: '100%', padding: '4rem 0' }}>
                   <div style={{ width: '56px', height: '56px', background: GOLD, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '2rem' }}>
@@ -192,7 +192,7 @@ export default function ContactPage() {
                   </p>
 
                   {/* Name + Company */}
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '2.5rem' }}>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10">
                     <div>
                       <label style={labelStyle}>Name *</label>
                       <input type="text" name="name" value={formData.name} onChange={handleChange} required
@@ -210,7 +210,7 @@ export default function ContactPage() {
                   </div>
 
                   {/* Email + Phone */}
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '2.5rem' }}>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10">
                     <div>
                       <label style={labelStyle}>Email *</label>
                       <input type="email" name="email" value={formData.email} onChange={handleChange} required
