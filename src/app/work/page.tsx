@@ -78,7 +78,7 @@ export default function WorkPage() {
 
       {/* ── STATS BAR ────────────────────────────────────────────── */}
       <section style={{ borderTop: '1px solid rgba(105,137,150,0.2)', borderBottom: '1px solid rgba(105,137,150,0.2)', background: '#F5F4F0' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))' }}>
           {stats.map((s, i) => (
             <div key={i} style={{
               padding: '2rem clamp(1.5rem,3vw,3rem)',

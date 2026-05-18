@@ -112,7 +112,7 @@ export default function ServicesPage() {
 
       {/* ══ STATS BAR ══ */}
       <section style={{ borderTop: '1px solid rgba(105,137,150,0.2)', borderBottom: '1px solid rgba(105,137,150,0.2)', background: '#F5F4F0' }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4,1fr)' }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))' }}>
           {[
             { value: '6', label: 'Service Categories' },
             { value: '12+', label: 'Projects Delivered' },
@@ -140,7 +140,7 @@ export default function ServicesPage() {
         <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(2, 1fr)',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))',
             gap: '1px',
             background: 'rgba(105,137,150,0.2)',
           }}>
