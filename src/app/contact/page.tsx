@@ -21,7 +21,23 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => { setLoading(false); setSubmitted(true); }, 800);
+
+    const message = encodeURIComponent(
+      `Hello SAI AAKANKSHYA ASSOCIATES! 👋\n\n` +
+      `*New Project Inquiry*\n\n` +
+      `*Name:* ${formData.name}\n` +
+      `${formData.company ? `*Company:* ${formData.company}\n` : ''}` +
+      `*Email:* ${formData.email}\n` +
+      `${formData.phone ? `*Phone:* ${formData.phone}\n` : ''}` +
+      `${formData.projectType ? `*Project Type:* ${formData.projectType}\n` : ''}` +
+      `\n*Message:*\n${formData.message}`
+    );
+
+    setTimeout(() => {
+      setLoading(false);
+      setSubmitted(true);
+      window.open(`https://wa.me/919040099001?text=${message}`, '_blank');
+    }, 800);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -179,10 +195,10 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <h3 style={{ color: '#fff', fontSize: 'clamp(1.8rem,3vw,2.5rem)', fontWeight: 800, letterSpacing: '-0.02em', marginBottom: '1rem' }}>
-                    Inquiry Sent!
+                    Message Sent!
                   </h3>
                   <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '1rem', lineHeight: 1.75 }}>
-                    Thank you for reaching out. Our team will get back to you shortly.
+                    Your inquiry has been sent to us via WhatsApp. We'll get back to you shortly!
                   </p>
                 </div>
               ) : (
