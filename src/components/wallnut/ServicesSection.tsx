@@ -34,12 +34,6 @@ const servicesList = [
     description: 'Integrated fire protection and security system installation for commercial complexes, institutions, airports, and large-scale infrastructure projects.',
     items: ['Fire Protection Systems', 'Security System Integration', 'Safety Compliance', 'Infrastructure Safety'],
   },
-  {
-    number: '06',
-    title: 'Smart Automation & Energy',
-    description: 'Smart automation solutions and energy-efficient infrastructure systems designed to future-proof commercial, institutional, and government spaces.',
-    items: ['Smart Automation Solutions', 'Energy-Efficient Systems', 'Building Automation', 'Sustainable Infrastructure'],
-  },
 ];
 
 export default function ServicesSection() {

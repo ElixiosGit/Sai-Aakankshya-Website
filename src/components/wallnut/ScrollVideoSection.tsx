@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 
 export default function ScrollVideoSection() {
   const outerRef  = useRef<HTMLDivElement>(null);
-  const stickyRef = useRef<HTMLDivElement>(null);
+  const videoContainerRef = useRef<HTMLDivElement>(null);
   const videoRef  = useRef<HTMLVideoElement>(null);
   const text1Ref  = useRef<HTMLDivElement>(null);
   const text2Ref  = useRef<HTMLDivElement>(null);
@@ -23,69 +23,65 @@ export default function ScrollVideoSection() {
       if (killed) return;
 
       const outer  = outerRef.current;
-      const video  = videoRef.current;
+      const container = videoContainerRef.current;
       const text1  = text1Ref.current;
       const text2  = text2Ref.current;
-      if (!outer || !video || !text1 || !text2) return;
+      if (!outer || !container || !text1 || !text2) return;
 
-      // hide both texts initially
-      gsap.set(text1, { autoAlpha: 0, y: 36, scale: 0.93 });
-      gsap.set(text2, { autoAlpha: 0, y: 36, scale: 0.93 });
+      // Check if mobile
+      const isMobile = window.innerWidth < 1024;
 
-      const build = () => {
-        if (killed) return;
-        const totalDur = video.duration || 8;
+      if (!isMobile) {
+        // Desktop: Initially small and centered with curved edges
+        gsap.set(container, { scale: 0.5, borderRadius: '24px' });
+        gsap.set(text1, { autoAlpha: 0, y: 36, scale: 0.93 });
+        gsap.set(text2, { autoAlpha: 0, y: 36, scale: 0.93 });
 
-        /* ── shared scrollTrigger config ─────────────────────────── */
-        const ST = {
-          trigger : outer,
-          start   : 'top top',
-          end     : '+=300%',
-          scrub   : 1.8,
-        };
-
-        /* ── 1. video scrub ──────────────────────────────────────── */
-        const t0 = gsap.to(video, {
-          currentTime : totalDur,
-          ease        : 'none',
-          scrollTrigger: { ...ST, scrub: 2 },
+        // Expand video container from small to fullscreen
+        const expandTween = gsap.to(container, {
+          scale: 1,
+          borderRadius: '0px',
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: outer,
+            start: 'top bottom',
+            end: 'top top',
+            scrub: 1,
+          },
         });
-        triggers.push(t0.scrollTrigger);
+        triggers.push(expandTween.scrollTrigger);
 
-        /* ── 2. FROM CONCEPT
-              0 %–14 %  → fade + scale in
-              14%–42%   → hold
-              42%–55%   → fade + scale out
-              55%–100%  → invisible (pad)          ─────────────────── */
-        const tl1 = gsap.timeline({ scrollTrigger: ST });
-        tl1
-          .to(text1, { autoAlpha: 1, y: 0, scale: 1,    ease: 'power3.out', duration: 0.14 })
-          .to(text1, { autoAlpha: 1,                                          duration: 0.28 })
-          .to(text1, { autoAlpha: 0, y: -28, scale: 1.05, ease: 'power3.in', duration: 0.13 })
-          .to(text1, { autoAlpha: 0,                                          duration: 0.45 });
+        // Text animations
+        const tl1 = gsap.timeline({
+          scrollTrigger: {
+            trigger: outer,
+            start: 'top center',
+            end: 'center center',
+            scrub: 1,
+          },
+        });
+        tl1.to(text1, { autoAlpha: 1, y: 0, scale: 1, ease: 'power3.out' });
         triggers.push(tl1.scrollTrigger);
 
-        /* ── 3. TO COMPLETION
-              0 %–54 %  → invisible (pad / wait)
-              54%–68%   → fade + scale in
-              68%–86%   → hold
-              86%–100%  → fade + scale out         ─────────────────── */
-        const tl2 = gsap.timeline({ scrollTrigger: ST });
+        const tl2 = gsap.timeline({
+          scrollTrigger: {
+            trigger: outer,
+            start: 'center center',
+            end: 'bottom top',
+            scrub: 1,
+          },
+        });
         tl2
-          .to(text2, { autoAlpha: 0,                                          duration: 0.54 })
-          .to(text2, { autoAlpha: 1, y: 0, scale: 1,    ease: 'power3.out', duration: 0.14 })
-          .to(text2, { autoAlpha: 1,                                          duration: 0.18 })
-          .to(text2, { autoAlpha: 0, y: -28, scale: 1.05, ease: 'power3.in', duration: 0.14 });
+          .to(text1, { autoAlpha: 0, y: -28, scale: 1.05, ease: 'power3.in' }, 0)
+          .to(text2, { autoAlpha: 1, y: 0, scale: 1, ease: 'power3.out' }, 0.3);
         triggers.push(tl2.scrollTrigger);
-
-        ScrollTrigger.refresh();
-      };
-
-      if (video.readyState >= 1) {
-        build();
       } else {
-        video.addEventListener('loadedmetadata', build, { once: true });
+        // Mobile: No animations, just static display
+        gsap.set(text1, { autoAlpha: 1 });
+        gsap.set(text2, { autoAlpha: 0 });
       }
+
+      ScrollTrigger.refresh();
     };
 
     boot();
@@ -97,30 +93,30 @@ export default function ScrollVideoSection() {
   }, []);
 
   return (
-    /*
-      outerRef  — 400 vh tall scroll container
-      stickyRef — CSS sticky viewport (100 vh), stays pinned while
-                  the user scrolls through the extra 300 vh
-    */
     <div
       ref={outerRef}
-      style={{ position: 'relative', height: '400vh' }}
+      className="video-section-outer"
+      style={{ 
+        position: 'relative',
+        width: '100%',
+        background: '#ffffff',
+      }}
     >
       <div
-        ref={stickyRef}
+        ref={videoContainerRef}
+        className="video-container"
         style={{
-          position : 'sticky',
-          top      : 0,
-          width    : '100%',
-          height   : '100vh',
-          overflow : 'hidden',
-          background: '#050505',
+          position: 'relative',
+          overflow: 'hidden',
+          background: '#ffffff',
         }}
       >
-        {/* ── video ─────────────────────────────────────────────── */}
+        {/* ── video (autoplay loop) ─────────────────────────────────────────────── */}
         <video
           ref={videoRef}
           src="/assets/images/output_house002_tc.mp4"
+          autoPlay
+          loop
           muted
           playsInline
           preload="auto"
@@ -263,43 +259,35 @@ export default function ScrollVideoSection() {
             marginTop : '2.2rem',
           }} />
         </div>
-
-        {/* ── scroll hint (fades out as user scrolls) ───────────── */}
-        <div style={{
-          position      : 'absolute',
-          bottom        : '2.5rem',
-          left          : '50%',
-          transform     : 'translateX(-50%)',
-          zIndex        : 4,
-          display       : 'flex',
-          flexDirection : 'column',
-          alignItems    : 'center',
-          gap           : '0.5rem',
-          opacity       : 0.5,
-          pointerEvents : 'none',
-        }}>
-          <span style={{
-            color        : '#fff',
-            fontSize     : '0.6rem',
-            letterSpacing: '0.35em',
-            textTransform: 'uppercase',
-            fontFamily   : '"Inter", sans-serif',
-            fontWeight   : 300,
-          }}>Scroll</span>
-          <div style={{
-            width           : '1px',
-            height          : '2.5rem',
-            background      : 'linear-gradient(to bottom, rgba(255,255,255,0.6), transparent)',
-            animation       : 'scrollPulse 1.8s ease-in-out infinite',
-          }} />
-        </div>
       </div>
 
-      {/* ── keyframe for scroll hint ──────────────────────────────── */}
+      {/* ── Styles ──────────────────────────────────────────────── */}
       <style>{`
-        @keyframes scrollPulse {
-          0%, 100% { opacity: 0.3; transform: scaleY(1);   }
-          50%       { opacity: 0.9; transform: scaleY(1.15); }
+        /* Desktop: Expandable fullscreen video */
+        @media (min-width: 1024px) {
+          .video-section-outer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+          }
+          .video-container {
+            width: 100%;
+            height: 100vh;
+          }
+        }
+
+        /* Mobile: Fixed 16:9 aspect ratio with padding */
+        @media (max-width: 1023px) {
+          .video-section-outer {
+            padding: 2rem 1.5rem;
+          }
+          .video-container {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 16px;
+            max-width: 100%;
+          }
         }
       `}</style>
     </div>

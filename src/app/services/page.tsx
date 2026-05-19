@@ -41,12 +41,6 @@ const services = [
     description: 'Integrated fire protection and security system installation for commercial complexes, institutions, airports, and large-scale infrastructure projects.',
     items: ['Fire Protection Systems', 'Security System Integration', 'Safety Compliance', 'Infrastructure Safety'],
   },
-  {
-    number: '06',
-    title: 'Smart Automation & Energy',
-    description: 'Smart automation solutions and energy-efficient infrastructure systems designed to future-proof commercial, institutional, and government spaces.',
-    items: ['Smart Automation Solutions', 'Energy-Efficient Systems', 'Building Automation', 'Sustainable Infrastructure'],
-  },
 ];
 
 export default function ServicesPage() {
@@ -114,7 +108,7 @@ export default function ServicesPage() {
       <section style={{ borderTop: '1px solid rgba(105,137,150,0.2)', borderBottom: '1px solid rgba(105,137,150,0.2)', background: '#F5F4F0' }}>
         <div style={{ maxWidth: '1440px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))' }}>
           {[
-            { value: '6', label: 'Service Categories' },
+            { value: '5', label: 'Service Categories' },
             { value: '12+', label: 'Projects Delivered' },
             { value: '28+', label: 'Years Expertise' },
             { value: 'Pan-India', label: 'Execution Reach' },

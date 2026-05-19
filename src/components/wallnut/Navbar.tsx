@@ -81,7 +81,6 @@ export default function Navbar() {
             className="flex items-center gap-3 text-white"
             aria-label="Toggle menu"
           >
-            <span className="text-sm font-medium">{menuOpen ? 'Close' : 'Menu'}</span>
             <div className="flex flex-col gap-1.5 w-6">
               <span
                 className={`block h-px bg-white transition-all duration-300 ${
@@ -123,7 +122,6 @@ export default function Navbar() {
             }`}
             aria-label="Toggle menu"
           >
-            <span className="text-sm font-medium">Menu</span>
             <div className="flex flex-col gap-1.5 w-6">
               <span className="block h-px bg-white" />
               <span className="block h-px bg-white" />
