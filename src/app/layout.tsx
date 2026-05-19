@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Metadata, Viewport } from 'next';
 import SmoothScroll from '@/components/wallnut/SmoothScroll';
+import WhatsAppButton from '@/components/wallnut/WhatsAppButton';
 import '../styles/index.css';
 import '../styles/tailwind.css';
 
@@ -14,8 +15,11 @@ export const metadata: Metadata = {
   description: "SAI AAKANKSHYA ASSOCIATES is a Bhubaneswar-based execution and infrastructure solutions company delivering premium interior, exterior, ceiling, cladding, and civil construction projects across India.",
   icons: {
     icon: [
-      { url: 'https://cdn.prod.website-files.com/66c70111b2a812bad4379fb4/677d3933f78bfe4485bc6bfa_Favicon.jpg', type: 'image/jpeg' }
-    ]
+      { url: '/assets/images/saia.png', type: 'image/png' }
+    ],
+    apple: [
+      { url: '/assets/images/saia.png', type: 'image/png' }
+    ],
   }
 };
 
@@ -35,6 +39,7 @@ export default function RootLayout({
       </head>
       <body style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}>
         <SmoothScroll>{children}</SmoothScroll>
+        <WhatsAppButton />
       </body>
     </html>
   );

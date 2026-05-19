@@ -257,6 +257,117 @@ export default function WorkPage() {
         </div>
       </section>
 
+      {/* ── GALLERY SECTION ──────────────────────────────────────── */}
+      <section style={{ padding: '5rem clamp(2rem,5vw,5rem)', background: '#F5F4F0', borderTop: '1px solid rgba(105,137,150,0.2)' }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+          {/* Section header */}
+          <div style={{ marginBottom: '3rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
+              <svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="#FDC41F" /></svg>
+              <span style={{ color: '#202A30', fontSize: '0.7rem', fontWeight: 600, letterSpacing: '0.4em', textTransform: 'uppercase' }}>
+                Project Gallery
+              </span>
+              <div style={{ flex: 1, height: '1px', background: 'rgba(105,137,150,0.3)' }} />
+            </div>
+            <h2 style={{
+              color: '#202A30',
+              fontSize: 'clamp(2rem, 4vw, 3.5rem)',
+              fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.03em',
+            }}>
+              More from our <span style={{ color: '#FDC41F' }}>work</span>
+            </h2>
+          </div>
+
+          {/* Gallery grid */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(3, 1fr)',
+            gap: '0.5rem',
+          }}
+          className="gallery-grid">
+            {[
+              { src: '/assets/images/WhatsApp Image 2026-05-18 at 11.15.24 PM.jpeg', alt: 'SUM Ultimate Bhubaneswar - Interior View', label: 'SUM Ultimate, Bhubaneswar' },
+              { src: '/assets/images/WhatsApp Image 2026-05-18 at 11.15.24 PM (1).jpeg', alt: 'SUM Ultimate Bhubaneswar - Exterior View', label: 'SUM Ultimate, Bhubaneswar' },
+              { src: '/assets/images/WhatsApp Image 2026-05-19 at 11.49.45 PM.jpeg', alt: 'Guwahati Airport', label: 'Guwahati Airport' },
+              { src: '/assets/images/WhatsApp Image 2026-05-19 at 11.49.46 PM.jpeg', alt: 'Navi Mumbai Project', label: 'Navi Mumbai' },
+              { src: '/assets/images/WhatsApp Image 2026-05-19 at 11.49.45 PM (1).jpeg', alt: 'Navi Mumbai Project', label: 'Navi Mumbai' },
+              { src: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.13 PM.jpeg', alt: 'Project execution detail', label: 'Ceiling Execution' },
+              { src: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.14 PM.jpeg', alt: 'Project execution detail', label: 'Infrastructure Work' },
+              { src: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.14 PM (1).jpeg', alt: 'Project execution detail', label: 'Cladding Work' },
+              { src: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.16 PM.jpeg', alt: 'Project execution detail', label: 'Interior Finishing' },
+              { src: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.17 PM.jpeg', alt: 'Project execution detail', label: 'Facade Execution' },
+              { src: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.19 PM.jpeg', alt: 'Project execution detail', label: 'Civil Construction' },
+              { src: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.20 PM.jpeg', alt: 'Project execution detail', label: 'Project Completion' },
+              { src: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.22 PM.jpeg', alt: 'Project execution detail', label: 'Quality Execution' },
+              { src: '/assets/images/coconut peninsula resort.jpg', alt: 'Coconut Peninsula Resort', label: 'Coconut Peninsula Resort' },
+              { src: '/assets/images/Delhi T1.jpeg', alt: 'Delhi Airport Terminal 1', label: 'IGI Airport, New Delhi' },
+            ].map((img, i) => (
+              <div
+                key={i}
+                style={{
+                  position: 'relative',
+                  overflow: 'hidden',
+                  aspectRatio: '4/3',
+                  background: '#ffffff',
+                  cursor: 'pointer',
+                  transition: 'transform 0.3s ease',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-4px)';
+                  const imgEl = e.currentTarget.querySelector('img') as HTMLImageElement;
+                  if (imgEl) imgEl.style.transform = 'scale(1.08)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  const imgEl = e.currentTarget.querySelector('img') as HTMLImageElement;
+                  if (imgEl) imgEl.style.transform = 'scale(1)';
+                }}
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    display: 'block',
+                    transition: 'transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94)',
+                  }}
+                />
+                {/* Overlay */}
+                <div style={{
+                  position: 'absolute',
+                  inset: 0,
+                  background: 'linear-gradient(to top, rgba(32,42,48,0.75) 0%, transparent 60%)',
+                  display: 'flex',
+                  alignItems: 'flex-end',
+                  padding: '1rem',
+                }}>
+                  <span style={{
+                    color: '#ffffff',
+                    fontSize: '0.75rem',
+                    fontWeight: 600,
+                    letterSpacing: '0.02em',
+                  }}>
+                    {img.label}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Styles for responsive gallery */}
+          <style>{`
+            @media (min-width: 768px) {
+              .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)) !important;
+                gap: 1rem !important;
+              }
+            }
+          `}</style>
+        </div>
+      </section>
+
       {/* ── CTA BANNER ───────────────────────────────────────────── */}
       <section style={{
         borderTop: '1px solid rgba(105,137,150,0.2)',

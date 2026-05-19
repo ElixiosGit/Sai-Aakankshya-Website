@@ -278,6 +278,133 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ══ LEADERSHIP — white ══ */}
+      <section style={{ padding: `5rem ${PAD}`, background: WHITE, borderTop: `1px solid ${DIM}` }}>
+        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+          {/* Section header */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '3rem' }}>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill={GOLD}>
+              <circle cx="6" cy="6" r="6" />
+            </svg>
+            <span style={{ color: DARK, fontSize: '0.875rem', fontWeight: 600 }}>Our leadership</span>
+            <div style={{ flex: 1, height: '1px', background: DIM }} />
+          </div>
+
+          {/* Content grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 mb-12">
+            {/* Left - Heading + CTA */}
+            <FadeUp>
+              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: '2.5rem' }}>
+                <h3 style={{
+                  color: DARK,
+                  fontWeight: 500,
+                  fontSize: 'clamp(1.6rem, 2.8vw, 2.5rem)',
+                  lineHeight: 1.25,
+                  letterSpacing: '-0.02em',
+                }}>
+                  Spearheaded by <span style={{ fontWeight: 700, color: GOLD }}>Mr. Debasis Mohapatra</span>, whose <span style={{ fontWeight: 700 }}>28 years of distinguished corporate leadership</span> have established SAI AAKANKSHYA ASSOCIATES as a premier powerhouse in elite infrastructure and monumental turnkey execution.
+                </h3>
+
+                {/* Founder details */}
+                <div style={{ borderTop: `1px solid ${DIM}`, paddingTop: '1.5rem' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                    <span style={{ color: GOLD, fontSize: '0.75rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.15em' }}>
+                      Founder & Director
+                    </span>
+                    <span style={{ color: DARK, fontWeight: 700, fontSize: '1.125rem' }}>
+                      Mr. Debasis Mohapatra
+                    </span>
+                    <span style={{ color: BODY, fontSize: '0.875rem' }}>
+                      28 Years · Infrastructure & Execution · Bhubaneswar, Odisha
+                    </span>
+                  </div>
+                </div>
+
+                <Link
+                  href="/contact"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.75rem',
+                    border: `1px solid rgba(32,42,48,0.3)`,
+                    color: DARK,
+                    padding: '0.75rem 1.5rem',
+                    fontSize: '0.875rem',
+                    fontWeight: 500,
+                    textDecoration: 'none',
+                    width: 'fit-content',
+                    transition: 'all 0.3s',
+                  }}
+                  onMouseEnter={e => (e.currentTarget.style.borderColor = DARK)}
+                  onMouseLeave={e => (e.currentTarget.style.borderColor = 'rgba(32,42,48,0.3)')}
+                >
+                  Get to know us
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M4 12H20M20 12L14 6M20 12L14 18" />
+                  </svg>
+                </Link>
+              </div>
+            </FadeUp>
+
+            {/* Right - Founder portrait */}
+            <FadeUp delay={0.15}>
+              <div style={{ position: 'relative', overflow: 'hidden', minHeight: '380px' }}>
+                <img
+                  src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Mr. Debasis Mohapatra — Founder & Director"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+                {/* Name tag overlay */}
+                <div style={{
+                  position: 'absolute',
+                  bottom: '1.5rem',
+                  left: '1.5rem',
+                  background: 'rgba(255,255,255,0.95)',
+                  backdropFilter: 'blur(8px)',
+                  padding: '0.75rem 1.25rem',
+                  borderLeft: `4px solid ${GOLD}`,
+                }}>
+                  <p style={{ color: DARK, fontWeight: 700, fontSize: '0.875rem', marginBottom: '0.25rem' }}>
+                    Mr. Debasis Mohapatra
+                  </p>
+                  <p style={{ color: BODY, fontSize: '0.75rem', margin: 0 }}>
+                    Founder & Director
+                  </p>
+                </div>
+              </div>
+            </FadeUp>
+          </div>
+
+          {/* Bottom - Corporate interior image */}
+          <FadeUp delay={0.3}>
+            <div style={{
+              position: 'relative',
+              overflow: 'hidden',
+              height: 'clamp(280px, 35vw, 420px)',
+            }}>
+              <img
+                src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1400"
+                alt="Premium corporate interior execution by SAI AAKANKSHYA ASSOCIATES"
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+              <div style={{
+                position: 'absolute',
+                inset: 0,
+                background: 'linear-gradient(to top, rgba(32,42,48,0.6) 0%, transparent 100%)',
+              }} />
+              <div style={{ position: 'absolute', bottom: '2rem', left: 'clamp(2rem,2.5vw,2.5rem)' }}>
+                <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.875rem', marginBottom: '0.5rem' }}>
+                  Premium execution across
+                </p>
+                <p style={{ color: WHITE, fontWeight: 700, fontSize: 'clamp(1.125rem,1.5vw,1.25rem)', margin: 0 }}>
+                  Airports · Institutions · Hospitality · Government
+                </p>
+              </div>
+            </div>
+          </FadeUp>
+        </div>
+      </section>
+
       {/* ══ MISSION & OBJECTIVES — off-white ══ */}
       <section style={{ padding: `5rem ${PAD}`, background: MID, borderTop: `1px solid ${DIM}` }}>
         <div style={{ maxWidth: '1440px', margin: '0 auto' }}>

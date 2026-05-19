@@ -57,7 +57,6 @@ export default function TimelineSection() {
   const outerRef   = useRef<HTMLDivElement>(null);
   const stickyRef  = useRef<HTMLDivElement>(null);
   const trackRef   = useRef<HTMLDivElement>(null);
-  const spacerRef  = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const activeRef = useRef(0);
 
@@ -74,31 +73,27 @@ export default function TimelineSection() {
       if (killed) return;
 
       const outer  = outerRef.current;
+      const sticky = stickyRef.current;
       const track  = trackRef.current;
-      const spacer = spacerRef.current;
-      if (!outer || !track || !spacer) return;
+      if (!outer || !sticky || !track) return;
 
-      // Each slide = half the viewport width (track is 50% wide)
-      // We need to scroll (n-1) full slide widths
-      // The left panel is 50vw, so each image slide = 50vw
-      // But we translate the full track, so totalSlide = (n-1) * 50vw
+      // Calculate total scroll distance needed
       const slideWidth = window.innerWidth * 0.5;
       const totalSlide = (timelineItems.length - 1) * slideWidth;
 
-      // Set spacer to give the outer div enough height
-      spacer.style.height = `${totalSlide}px`;
-
-      // Scrub the track horizontally as user scrolls
+      // Pin the sticky container and scrub the track horizontally
       const tween = gsap.to(track, {
-        x    : -totalSlide,
-        ease : 'none',
+        x: -totalSlide,
+        ease: 'none',
         scrollTrigger: {
-          trigger   : outer,
-          start     : 'top top',
-          end       : () => `+=${totalSlide}`,
-          scrub     : 1.2,
+          trigger: sticky,
+          start: 'top top',
+          end: () => `+=${totalSlide}`,
+          scrub: 1.2,
+          pin: sticky,
+          anticipatePin: 1,
           invalidateOnRefresh: true,
-          onUpdate  : (self) => {
+          onUpdate: (self) => {
             const idx = Math.round(self.progress * (timelineItems.length - 1));
             if (idx !== activeRef.current) {
               activeRef.current = idx;
@@ -166,8 +161,6 @@ export default function TimelineSection() {
       <div
         ref={stickyRef}
         style={{
-          position : 'sticky',
-          top      : 0,
           width    : '100%',
           height   : '100vh',
           overflow : 'hidden',
@@ -396,9 +389,6 @@ export default function TimelineSection() {
           </div>
         </div>
       </div>
-
-      {/* spacer — must match the ScrollTrigger end distance exactly */}
-      <div id="timeline-spacer" ref={spacerRef} style={{ height: `${(timelineItems.length - 1) * 100}vh` }} />
 
       {/* ── keyframes ── */}
       <style>{`

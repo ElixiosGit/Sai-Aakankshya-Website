@@ -18,10 +18,16 @@ const heroImages = [
     location: 'Tangi, Odisha',
   },
   {
-    src: '/assets/images/hero-bedroom.png',
-    alt: 'Premium interior design with sophisticated ceiling execution.',
-    label: 'Premium Interior',
-    location: 'Bhubaneswar, India',
+    src: '/assets/images/WhatsApp Image 2026-05-18 at 11.15.24 PM.jpeg',
+    alt: 'SUM Ultimate Bhubaneswar — premium interior execution.',
+    label: 'Institutional Interior',
+    location: 'Bhubaneswar, Odisha',
+  },
+  {
+    src: '/assets/images/WhatsApp Image 2026-05-18 at 11.15.24 PM (1).jpeg',
+    alt: 'SUM Ultimate Bhubaneswar — ceiling and cladding execution.',
+    label: 'SUM Ultimate',
+    location: 'Bhubaneswar, Odisha',
   },
 ];
 

@@ -180,7 +180,6 @@ export default function Footer() {
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
                 {[
-                  { label: 'GSTN', value: '21AEJFS7979B1ZT' },
                   { label: 'Founded', value: '2021' },
                   { label: 'Founder', value: 'Mr. Debasis Mohapatra' },
                 ].map((item, i) => (
@@ -225,7 +224,7 @@ export default function Footer() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', flexWrap: 'wrap' }}>
               <WallnutLogo color="#FDC41F" className="h-6 w-auto" />
               <span style={{ color: 'rgba(255,255,255,0.18)', fontSize: '0.7rem', letterSpacing: '0.05em' }}>
-                © SAI AAKANKSHYA ASSOCIATES 2024
+                © SAI AAKANKSHYA ASSOCIATES 2026
               </span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>

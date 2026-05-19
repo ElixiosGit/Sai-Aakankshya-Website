@@ -239,7 +239,6 @@ export default function ContactPage() {
                       <option value="interior-exterior" style={{ background: DARK }}>Interior & Exterior Execution</option>
                       <option value="civil" style={{ background: DARK }}>Civil Construction</option>
                       <option value="fire-security" style={{ background: DARK }}>Fire & Security Systems</option>
-                      <option value="smart-automation" style={{ background: DARK }}>Smart Automation & Energy</option>
                       <option value="other" style={{ background: DARK }}>Other</option>
                     </select>
                   </div>
