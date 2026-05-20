@@ -369,45 +369,6 @@ export default function WorkPage() {
       </section>
 
       {/* ── CTA BANNER ───────────────────────────────────────────── */}
-      <section style={{
-        borderTop: '1px solid rgba(105,137,150,0.2)',
-        padding: '5rem clamp(2rem,5vw,5rem)',
-        background: '#202A30',
-      }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <svg width="10" height="10" viewBox="0 0 12 12"><circle cx="6" cy="6" r="6" fill="#FDC41F" /></svg>
-            <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.65rem', fontWeight: 500, letterSpacing: '0.4em', textTransform: 'uppercase' }}>
-              Let's Build Together
-            </span>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', flexWrap: 'wrap', gap: '2rem' }}>
-            <h2 style={{
-              color: '#ffffff',
-              fontSize: 'clamp(2rem, 5vw, 4.5rem)',
-              fontWeight: 800, lineHeight: 1.05, letterSpacing: '-0.03em', margin: 0,
-            }}>
-              Have a project<br />in mind?
-            </h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'flex-start' }}>
-              <p style={{ color: 'rgba(255,255,255,0.55)', fontSize: '0.85rem', lineHeight: 1.7, maxWidth: '36ch', margin: 0 }}>
-                From site assessment to final handover — we deliver premium infrastructure execution across India.
-              </p>
-              <Link href="/contact" style={{
-                display: 'inline-flex', alignItems: 'center', gap: '0.75rem',
-                background: '#FDC41F', color: '#202A30',
-                padding: '1rem 2.5rem', fontSize: '0.8rem', fontWeight: 700,
-                letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none',
-              }}>
-                Get in Touch
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M4 12H20M20 12L14 6M20 12L14 18" />
-                </svg>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </main>

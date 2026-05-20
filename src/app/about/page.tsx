@@ -595,45 +595,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ══ CTA — dark teal, same as services CTA ══ */}
-      <section style={{ padding: `5rem ${PAD}`, background: DARK, borderTop: `1px solid ${DIM}` }}>
-        <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
-          <FadeUp>
-            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 lg:gap-12">
-              <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
-                  <svg width="10" height="10" viewBox="0 0 12 12"><circle cx="6" cy="6" r="6" fill={GOLD} /></svg>
-                  <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.65rem', fontWeight: 500, letterSpacing: '0.4em', textTransform: 'uppercase' }}>
-                    Let's Build Together
-                  </span>
-                </div>
-                <h2 style={{
-                  color: WHITE,
-                  fontSize: 'clamp(2rem,5vw,4rem)',
-                  fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.03em', margin: 0,
-                }}>
-                  Ready to start<br />your project?
-                </h2>
-              </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'flex-start' }}>
-                <p style={{ color: 'rgba(255,255,255,0.55)', fontSize: '0.88rem', lineHeight: 1.75, maxWidth: '34ch', margin: 0 }}>
-                  From site assessment to final handover — we deliver premium infrastructure execution across India.
-                </p>
-                <Link href="/contact" style={{
-                  display: 'inline-flex', alignItems: 'center', gap: '0.75rem',
-                  background: GOLD, color: DARK,
-                  padding: '1rem 2.5rem', fontSize: '0.78rem', fontWeight: 700,
-                  letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none',
-                }}>
-                  Get in Touch
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12H20M20 12L14 6M20 12L14 18" /></svg>
-                </Link>
-              </div>
-            </div>
-          </FadeUp>
-        </div>
-      </section>
-
       <Footer />
     </main>
   );
