@@ -6,27 +6,27 @@ import WallnutLogo from './WallnutLogo';
 
 const heroImages = [
   {
-    src: '/assets/images/Delhi T1.jpeg',
-    alt: 'Indira Gandhi International Airport T1 — premium ceiling and cladding execution.',
+    src: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.13 PM.jpeg',
+    alt: 'Rajiv Gandhi International Airport Hyderabad — linear ceiling execution.',
     label: 'Airport Infrastructure',
-    location: 'New Delhi, India',
+    location: 'Hyderabad, India',
   },
   {
-    src: '/assets/images/coconut peninsula resort.jpg',
-    alt: 'Coconut Peninsula Resort — premium hospitality interior execution.',
-    label: 'Hospitality Interior',
-    location: 'Tangi, Odisha',
+    src: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.14 PM (1).jpeg',
+    alt: 'CCS International Airport Lucknow — baffle ceiling execution.',
+    label: 'Airport Infrastructure',
+    location: 'Lucknow, India',
   },
   {
-    src: '/assets/images/WhatsApp Image 2026-05-18 at 11.15.24 PM.jpeg',
-    alt: 'SUM Ultimate Bhubaneswar — premium interior execution.',
-    label: 'Institutional Interior',
-    location: 'Bhubaneswar, Odisha',
+    src: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.19 PM.jpeg',
+    alt: 'Babasaheb Ambedkar Bus Terminal — large-scale baffle ceiling execution.',
+    label: 'Public Infrastructure',
+    location: 'India',
   },
   {
-    src: '/assets/images/WhatsApp Image 2026-05-18 at 11.15.24 PM (1).jpeg',
-    alt: 'SUM Ultimate Bhubaneswar — ceiling and cladding execution.',
-    label: 'SUM Ultimate',
+    src: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.20 PM.jpeg',
+    alt: 'DN Regalia Mall Bhubaneswar — aluminium facade execution.',
+    label: 'Commercial Facade',
     location: 'Bhubaneswar, Odisha',
   },
 ];
@@ -72,7 +72,7 @@ export default function HeroSection() {
     }, INTERVAL);
   };
 
-  const active = heroImages[activeImg];
+
 
   return (
     <section
@@ -168,9 +168,7 @@ export default function HeroSection() {
           {/* ROW 4: across India */}
           <div style={{ flex: 1, display: 'flex', alignItems: 'center' }}>
             <div style={{ width: '100%', padding: '0 clamp(2rem,2.5vw,2.5rem)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-              <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.65rem', fontWeight: 500, letterSpacing: '0.35em', textTransform: 'uppercase' }}>
-                Commercial · Government · Infrastructure
-              </p>
+              <div />
               <h2 style={{ color: '#FDC41F', fontWeight: 800, lineHeight: 1, fontSize: 'clamp(2.5rem, 6.5vw, 6.5rem)', letterSpacing: '-0.03em', margin: '0 0 0 auto', textAlign: 'right' }}>
                 across India
               </h2>
@@ -253,26 +251,6 @@ export default function HeroSection() {
             ))}
           </div>
         </div>
-
-        {/* 2. Scroll to explore */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <span style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.65rem', letterSpacing: '0.25em', textTransform: 'uppercase' }}>Scroll to explore</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.45)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M6 9L12 15L18 9" />
-          </svg>
-        </div>
-
-        {/* 3. Bottom line: Active image info */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-          <div style={{ width: '1.5rem', height: '1px', background: '#FDC41F' }} />
-          <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.7rem', letterSpacing: '0.15em', textTransform: 'uppercase' }}>
-            {active.label}
-          </span>
-          <span style={{ color: 'rgba(255,255,255,0.25)', fontSize: '0.65rem' }}>—</span>
-          <span style={{ color: 'rgba(255,255,255,0.35)', fontSize: '0.65rem', letterSpacing: '0.08em' }}>
-            {active.location}
-          </span>
-        </div>
       </div>
 
       {/* ── MOBILE: Slide controls + Explore + Image info bottom-left ── */}
@@ -316,26 +294,6 @@ export default function HeroSection() {
               </button>
             ))}
           </div>
-        </div>
-
-        {/* 2. Tap to explore */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-          <span style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.6rem', letterSpacing: '0.25em', textTransform: 'uppercase' }}>Tap to explore</span>
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.45)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M6 9L12 15L18 9" />
-          </svg>
-        </div>
-
-        {/* 3. Bottom line: Active image info */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <div style={{ width: '1rem', height: '1px', background: '#FDC41F' }} />
-          <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.65rem', letterSpacing: '0.15em', textTransform: 'uppercase' }}>
-            {active.label}
-          </span>
-          <span style={{ color: 'rgba(255,255,255,0.25)', fontSize: '0.6rem' }}>—</span>
-          <span style={{ color: 'rgba(255,255,255,0.35)', fontSize: '0.6rem', letterSpacing: '0.08em' }}>
-            {active.location}
-          </span>
         </div>
       </div>
     </section>
