@@ -228,6 +228,12 @@ export default function Footer() {
               </span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
+              <Link href="/hunterdouglas-ceiling-india"
+                style={{ color: 'rgba(255,255,255,0.25)', fontSize: '0.78rem', textDecoration: 'none', letterSpacing: '0.05em', transitionProperty: 'color', transitionDuration: '0.2s' }}
+                onMouseEnter={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.7)')}
+                onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.25)')}>
+                HunterDouglas Dealer India
+              </Link>
               <Link href="/privacy-policy"
                 style={{ color: 'rgba(255,255,255,0.25)', fontSize: '0.78rem', textDecoration: 'none', letterSpacing: '0.05em', transitionProperty: 'color', transitionDuration: '0.2s' }}
                 onMouseEnter={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.7)')}
