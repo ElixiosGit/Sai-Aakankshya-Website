@@ -29,14 +29,6 @@ const projects = [
     image: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.14 PM.jpeg',
   },
   {
-    id: 4,
-    name: 'Coconut Peninsula Resort',
-    type: 'Hospitality',
-    year: '2022',
-    location: 'Tangi, Odisha',
-    image: '/assets/images/coconut peninsula resort.jpg',
-  },
-  {
     id: 5,
     name: 'Babasaheb Ambedkar Bus Terminal',
     type: 'Public Infrastructure',

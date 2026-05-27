@@ -175,37 +175,6 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 6,
-    name: 'Coconut Peninsula Resort',
-    type: 'Hospitality',
-    category: 'Commercial',
-    year: '2022',
-    location: 'Tangi, Odisha',
-    scope: 'Linear Metal & Gypsum Ceiling',
-    area: '1200 sqm',
-    image: '/assets/images/coconut peninsula resort.jpg',
-    alt: 'Coconut Peninsula Resort Tangi Odisha — premium interior execution.',
-    description: 'Delivered premium hospitality interior execution featuring gypsum ceiling systems, linear metal ceiling installations, and sophisticated resort interior finishing.',
-    client: 'Peninsula Hospitality Group',
-    architect: 'Arch-En Design Studio',
-    duration: '10 Months',
-    challenges: [
-      'Creating intricate stepped gypsum ceiling coves to house concealed atmospheric warm-dim lighting.',
-      'Protecting exterior semi-open linear metal ceilings from coastal salt-mist corrosion.',
-      'Flawless integration of ceiling diffusers and fire sprinklers into decorative ceiling patterns.'
-    ],
-    solutions: [
-      'Utilized laser-cut pre-formed gypsum framing sections to achieve perfectly crisp 90-degree light coves.',
-      'Specified exterior-grade PVDF coated aluminium linear panels with heavy-duty wind-lock clips.',
-      'Custom-painted all exposed MEP fixtures to match the exact RAL color code of the ceiling.'
-    ],
-    gallery: [
-      '/assets/images/coconut peninsula resort.jpg',
-      '/assets/images/WhatsApp Image 2026-05-11 at 10.01.17 PM.jpeg',
-      '/assets/images/WhatsApp Image 2026-05-11 at 10.01.16 PM.jpeg'
-    ]
-  },
-  {
     id: 7,
     name: 'Babasaheb Ambedkar Bus Terminal',
     type: 'Public Infrastructure',
@@ -325,8 +294,7 @@ export const projects: Project[] = [
     ],
     gallery: [
       '/assets/images/WhatsApp Image 2026-05-11 at 10.01.17 PM.jpeg',
-      '/assets/images/WhatsApp Image 2026-05-11 at 10.01.16 PM.jpeg',
-      '/assets/images/coconut peninsula resort.jpg'
+      '/assets/images/WhatsApp Image 2026-05-11 at 10.01.16 PM.jpeg'
     ]
   },
   {

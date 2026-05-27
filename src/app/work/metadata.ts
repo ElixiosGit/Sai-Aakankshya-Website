@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 const BASE_URL = 'https://www.saiaakankshyaassociates.com';
 
 export const metadata: Metadata = {
-  title: 'Our Work — 12+ Landmark Infrastructure Projects Across India',
+  title: 'Our Work — 11+ Landmark Infrastructure Projects Across India',
   description:
-    'Explore SAI AAKANKSHYA ASSOCIATES portfolio of 12+ landmark projects — Indira Gandhi International Airport New Delhi, KIIT University, Coconut Peninsula Resort, SUM Ultimate Bhubaneswar, Guwahati Airport, Navi Mumbai, and more. Over 11,000 sqm of premium ceiling, cladding, and infrastructure execution across India.',
+    'Explore SAI AAKANKSHYA ASSOCIATES portfolio of 11+ landmark projects — Indira Gandhi International Airport New Delhi, KIIT University, SUM Ultimate Bhubaneswar, Guwahati Airport, Navi Mumbai, and more. Over 11,000 sqm of premium ceiling, cladding, and infrastructure execution across India.',
   keywords: [
     'infrastructure projects India',
     'ceiling projects India',
@@ -15,7 +15,6 @@ export const metadata: Metadata = {
     'Guwahati airport contractor',
     'KIIT University ceiling contractor',
     'SUM Ultimate Bhubaneswar contractor',
-    'Coconut Peninsula Resort interior',
     'Navi Mumbai infrastructure project',
     'ceiling cladding portfolio India',
     'landmark infrastructure projects',
@@ -36,9 +35,9 @@ export const metadata: Metadata = {
     canonical: `${BASE_URL}/work`,
   },
   openGraph: {
-    title: 'Our Work — 12+ Landmark Infrastructure Projects Across India',
+    title: 'Our Work — 11+ Landmark Infrastructure Projects Across India',
     description:
-      'Portfolio of 12+ landmark projects — IGI Airport, KIIT University, SUM Ultimate, Guwahati Airport, and more. Over 11,000 sqm of premium ceiling, cladding, and infrastructure execution.',
+      'Portfolio of 11+ landmark projects — IGI Airport, KIIT University, SUM Ultimate, Guwahati Airport, and more. Over 11,000 sqm of premium ceiling, cladding, and infrastructure execution.',
     url: `${BASE_URL}/work`,
     images: [
       {
@@ -50,9 +49,9 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    title: 'Our Work — 12+ Landmark Infrastructure Projects Across India',
+    title: 'Our Work — 11+ Landmark Infrastructure Projects Across India',
     description:
-      'Portfolio of 12+ landmark projects across airports, institutions, hospitality, and government infrastructure across India.',
+      'Portfolio of 11+ landmark projects across airports, institutions, hospitality, and government infrastructure across India.',
     images: ['/assets/images/Delhi T1.jpeg'],
   },
 };

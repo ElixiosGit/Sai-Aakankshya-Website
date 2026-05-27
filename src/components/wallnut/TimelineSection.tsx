@@ -46,7 +46,7 @@ const timelineItems = [
       'Every project concludes with a thorough quality inspection and formal handover — from KIIT University to Indira Gandhi International Airport, we deliver spaces that stand the test of time.',
     posterUrl: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.20 PM.jpeg',
     highlights: [
-      { label: 'Projects delivered', value: '12+ landmark projects'        },
+      { label: 'Projects delivered', value: '11+ landmark projects'        },
       { label: 'Footprint',          value: 'Pan-India execution'           },
       { label: 'Post-handover',      value: 'Quality assurance & support'  },
     ],

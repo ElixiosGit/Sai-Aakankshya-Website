@@ -109,7 +109,7 @@ export default function ServicesPage() {
         <div style={{ maxWidth: '1440px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))' }}>
           {[
             { value: '5', label: 'Service Categories' },
-            { value: '12+', label: 'Projects Delivered' },
+            { value: '11+', label: 'Projects Delivered' },
             { value: '28+', label: 'Years Expertise' },
             { value: 'Pan-India', label: 'Execution Reach' },
           ].map((s, i) => (

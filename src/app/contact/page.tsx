@@ -15,12 +15,10 @@ export default function ContactPage() {
     phone: '', projectType: '', message: '',
   });
   const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading]     = useState(false);
   const [focused, setFocused]     = useState<string | null>(null);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
 
     const message = encodeURIComponent(
       `Hello SAI AAKANKSHYA ASSOCIATES! 👋\n\n` +
@@ -33,11 +31,8 @@ export default function ContactPage() {
       `\n*Message:*\n${formData.message}`
     );
 
-    setTimeout(() => {
-      setLoading(false);
-      setSubmitted(true);
-      window.open(`https://wa.me/919040099001?text=${message}`, '_blank');
-    }, 800);
+    setSubmitted(true);
+    window.open(`https://wa.me/919040099001?text=${message}`, '_blank');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -152,7 +147,6 @@ export default function ContactPage() {
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                   {[
-                    { label: 'GSTN', value: '21AEJFS7979B1ZT' },
                     { label: 'Founded', value: '2021' },
                     { label: 'Founder', value: 'Mr. Debasis Mohapatra' },
                   ].map((item, i) => (
@@ -269,21 +263,19 @@ export default function ContactPage() {
                   </div>
 
                   {/* Submit */}
-                  <button type="submit" disabled={loading}
+                  <button type="submit"
                     style={{
                       display: 'inline-flex', alignItems: 'center', gap: '0.75rem',
                       background: GOLD, color: DARK,
                       padding: '1.1rem 2.8rem', fontSize: '0.85rem', fontWeight: 700,
                       letterSpacing: '0.1em', textTransform: 'uppercase',
-                      border: 'none', cursor: loading ? 'not-allowed' : 'pointer',
-                      opacity: loading ? 0.7 : 1, fontFamily: FONT,
+                      border: 'none', cursor: 'pointer',
+                      fontFamily: FONT,
                     }}>
-                    {loading ? 'Sending...' : 'Send Inquiry'}
-                    {!loading && (
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M4 12H20M20 12L14 6M20 12L14 18" />
-                      </svg>
-                    )}
+                    Send Inquiry
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M4 12H20M20 12L14 6M20 12L14 18" />
+                    </svg>
                   </button>
                 </form>
               )}
