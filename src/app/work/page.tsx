@@ -9,7 +9,7 @@ import { projects } from '@/data/projects';
 const categories = ['All', 'Government', 'Commercial', 'Institutional'];
 
 const stats = [
-  { value: '12+', label: 'Projects Delivered' },
+  { value: '11+', label: 'Projects Delivered' },
   { value: '11,000+', label: 'sqm Executed' },
   { value: '4', label: 'Airport Terminals' },
   { value: '2021', label: 'Est.' },
@@ -58,7 +58,7 @@ export default function WorkPage() {
 
           <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', flexWrap: 'wrap', gap: '2rem' }}>
             <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: 'clamp(0.95rem, 1.5vw, 1.1rem)', lineHeight: 1.7, maxWidth: '52ch' }}>
-              12+ landmark projects across airports, institutions, hospitality, and government infrastructure — from 1,000 sqm to 11,000+ sqm across India.
+              11+ landmark projects across airports, institutions, hospitality, and government infrastructure — from 1,000 sqm to 11,000+ sqm across India.
             </p>
             <Link href="/contact" style={{
               display: 'inline-flex', alignItems: 'center', gap: '0.75rem',
@@ -299,7 +299,6 @@ export default function WorkPage() {
               { src: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.19 PM.jpeg', alt: 'Project execution detail', label: 'Civil Construction' },
               { src: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.20 PM.jpeg', alt: 'Project execution detail', label: 'Project Completion' },
               { src: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.22 PM.jpeg', alt: 'Project execution detail', label: 'Quality Execution' },
-              { src: '/assets/images/coconut peninsula resort.jpg', alt: 'Coconut Peninsula Resort', label: 'Coconut Peninsula Resort' },
               { src: '/assets/images/Delhi T1.jpeg', alt: 'Delhi Airport Terminal 1', label: 'IGI Airport, New Delhi' },
             ].map((img, i) => (
               <div

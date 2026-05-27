@@ -319,7 +319,6 @@ export default function RootLayout({
                   ],
                   email: 'saiaakankshya.associates@gmail.com',
                   telephone: '+91-9040099001',
-                  taxID: '21AEJFS7979B1ZT',
                   areaServed: {
                     '@type': 'Country',
                     name: 'India',
@@ -357,7 +356,7 @@ export default function RootLayout({
                   ],
                   award: [
                     'Authorized HunterDouglas Dealer India',
-                    '12+ Landmark Infrastructure Projects',
+                    '11+ Landmark Infrastructure Projects',
                     '11,000+ sqm Ceiling Execution',
                   ],
                   numberOfEmployees: {
@@ -390,7 +389,6 @@ export default function RootLayout({
                   name: 'SAI AAKANKSHYA ASSOCIATES',
                   image: [
                     `${BASE_URL}/assets/images/Delhi T1.jpeg`,
-                    `${BASE_URL}/assets/images/coconut peninsula resort.jpg`,
                   ],
                   url: BASE_URL,
                   telephone: '+91-9040099001',
@@ -549,7 +547,7 @@ export default function RootLayout({
                       name: 'What is the experience of SAI AAKANKSHYA ASSOCIATES?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'SAI AAKANKSHYA ASSOCIATES was founded in 2021 by Mr. Debasis Mohapatra, who brings 28 years of distinguished corporate leadership in the infrastructure and execution industry. The company has delivered 12+ landmark projects across airports, institutions, hospitality, and government infrastructure.',
+                        text: 'SAI AAKANKSHYA ASSOCIATES was founded in 2021 by Mr. Debasis Mohapatra, who brings 28 years of distinguished corporate leadership in the infrastructure and execution industry. The company has delivered 11+ landmark projects across airports, institutions, hospitality, and government infrastructure.',
                       },
                     },
                     {
@@ -588,18 +586,12 @@ export default function RootLayout({
                     {
                       '@type': 'ListItem',
                       position: 4,
-                      name: 'Coconut Peninsula Resort — Tangi, Odisha',
-                      description: 'Premium hospitality interior and exterior execution at Coconut Peninsula Resort.',
-                    },
-                    {
-                      '@type': 'ListItem',
-                      position: 5,
                       name: 'Navi Mumbai Infrastructure Project — Maharashtra',
                       description: 'Large-scale ceiling and cladding execution in Navi Mumbai, Maharashtra.',
                     },
                     {
                       '@type': 'ListItem',
-                      position: 6,
+                      position: 5,
                       name: 'KIIT University — Bhubaneswar, Odisha',
                       description: 'Architectural ceiling and cladding execution for KIIT University campus.',
                     },

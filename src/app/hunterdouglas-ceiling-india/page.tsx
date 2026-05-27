@@ -166,7 +166,7 @@ export default function HunterDouglasPage() {
           <P>Government buildings and public infrastructure projects in India increasingly specify HunterDouglas ceiling systems for their quality, longevity, and compliance with government standards. We have executed HunterDouglas ceiling projects for government buildings, bus terminals, and public facilities across India.</P>
 
           <h3 style={{ color: DARK, fontSize: '1.2rem', fontWeight: 700, marginBottom: '0.75rem', marginTop: '2rem' }}>Hospitality — Hotels & Resorts</h3>
-          <P>The hospitality sector demands ceiling systems that combine premium aesthetics with durability. HunterDouglas ceiling systems are widely specified for five-star hotels, resorts, and hospitality complexes. We have executed HunterDouglas ceiling and interior projects at Coconut Peninsula Resort in Tangi, Odisha, and other hospitality projects across India.</P>
+          <P>The hospitality sector demands ceiling systems that combine premium aesthetics with durability. HunterDouglas ceiling systems are widely specified for five-star hotels, resorts, and hospitality complexes. We execute HunterDouglas ceiling and interior projects for hospitality developments and key commercial properties across India.</P>
         </div>
       </section>
 
@@ -178,7 +178,7 @@ export default function HunterDouglasPage() {
           <Bullet items={[
             'Authorized HunterDouglas Dealer — genuine products, full certification, manufacturer warranty',
             '28 years of industry expertise led by Mr. Debasis Mohapatra',
-            'Executed 12+ landmark projects including IGI Airport, Guwahati Airport, KIIT University',
+            'Executed 11+ landmark projects including IGI Airport, Guwahati Airport, KIIT University',
             'Pan-India execution — Odisha, Delhi, Mumbai, Guwahati, and beyond',
             'Large-scale capability — 1,000 sqm to 11,000+ sqm in a single project',
             'Complete turnkey service — supply, installation, quality inspection, handover',

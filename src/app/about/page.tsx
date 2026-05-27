@@ -36,7 +36,7 @@ const PAD   = 'clamp(2rem,5vw,5rem)';
 const stats = [
   { value: '2021',      label: 'Founded'           },
   { value: '28+',       label: 'Years of Expertise' },
-  { value: '12+',       label: 'Landmark Projects'  },
+  { value: '11+',       label: 'Landmark Projects'  },
   { value: 'Pan-India', label: 'Project Footprint'  },
 ];
 
