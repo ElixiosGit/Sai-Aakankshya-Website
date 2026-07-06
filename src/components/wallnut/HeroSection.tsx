@@ -6,6 +6,30 @@ import WallnutLogo from './WallnutLogo';
 
 const heroImages = [
   {
+    src: '/assets/images/guwahati-airport-1.jpeg',
+    alt: 'Lokpriya Gopinath Bordoloi International Airport — ceiling systems execution.',
+    label: 'Airport Infrastructure',
+    location: 'Guwahati, Assam',
+  },
+  {
+    src: '/assets/images/resort-trisulia-1.jpeg',
+    alt: 'Prameya Bhubaneswar — commercial infrastructure execution.',
+    label: 'Commercial Infrastructure',
+    location: 'Bhubaneswar, Odisha',
+  },
+  {
+    src: '/assets/images/dn-regalia-4.jpeg',
+    alt: 'DN Regalia Mall — LED lighting facade execution.',
+    label: 'Commercial Facade',
+    location: 'Bhubaneswar, Odisha',
+  },
+  {
+    src: '/assets/images/navi-mumbai-2.jpeg',
+    alt: 'Navi Mumbai Airport — large-scale airport infrastructure.',
+    label: 'Airport Infrastructure',
+    location: 'Navi Mumbai, Maharashtra',
+  },
+  {
     src: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.13 PM.jpeg',
     alt: 'Rajiv Gandhi International Airport Hyderabad — linear ceiling execution.',
     label: 'Airport Infrastructure',
