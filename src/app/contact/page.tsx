@@ -135,8 +135,9 @@ export default function ContactPage() {
                   style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.95rem', lineHeight: 1.8, textDecoration: 'none', display: 'block', transitionProperty: 'color', transitionDuration: '0.2s' }}
                   onMouseEnter={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.8)')}
                   onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.45)')}>
-                  Plot No 36, Nuasahi, Rasulgarh,<br />
-                  Bhubaneswar, Odisha – 751010
+                  434, Lane 5, Niladri Vihar,<br />
+                  Chandrasekharpur, Bhubaneswar,<br />
+                  Odisha – 751021
                 </a>
               </div>
 

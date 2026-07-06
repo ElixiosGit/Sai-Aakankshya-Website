@@ -154,7 +154,7 @@ export default function Navbar() {
               <div className="space-y-4 mb-8">
                 <div>
                   <p className="text-white text-sm mb-1">Bhubaneswar</p>
-                  <p className="text-white/60 text-sm">Plot No 36, Nuasahi, Rasulgarh,<br />Bhubaneswar, Odisha – 751010</p>
+                  <p className="text-white/60 text-sm">434, Lane 5, Niladri Vihar,<br />Chandrasekharpur, Bhubaneswar,<br />Odisha – 751021</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">

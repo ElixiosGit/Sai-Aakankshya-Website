@@ -206,8 +206,8 @@ export default function CookiePolicyPage() {
             </p>
             <div className="p-6 border border-[#698996]/20 bg-[#F5F4F0]">
               <p className="font-bold mb-1" style={{ color: '#202A30' }}>SAI AAKANKSHYA ASSOCIATES</p>
-              <p style={{ color: '#698996' }}>Plot No 36, Nuasahi, Rasulgarh</p>
-              <p style={{ color: '#698996' }}>Bhubaneswar, Odisha – 751010</p>
+              <p style={{ color: '#698996' }}>434, Lane 5, Niladri Vihar, Chandrasekharpur</p>
+              <p style={{ color: '#698996' }}>Bhubaneswar, Odisha – 751021</p>
               <p className="mt-3" style={{ color: '#698996' }}>
                 Email:{' '}
                 <a href="mailto:saiaakankshya.associates@gmail.com" className="hover:text-[#FDC41F] transition-colors" style={{ color: '#202A30' }}>

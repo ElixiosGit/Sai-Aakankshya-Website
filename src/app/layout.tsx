@@ -296,10 +296,10 @@ export default function RootLayout({
                   },
                   address: {
                     '@type': 'PostalAddress',
-                    streetAddress: 'Plot No 36, Nuasahi, Rasulgarh',
+                    streetAddress: '434, Lane 5, Niladri Vihar, Chandrasekharpur',
                     addressLocality: 'Bhubaneswar',
                     addressRegion: 'Odisha',
-                    postalCode: '751010',
+                    postalCode: '751021',
                     addressCountry: 'IN',
                   },
                   contactPoint: [
@@ -398,10 +398,10 @@ export default function RootLayout({
                   paymentAccepted: 'Cash, Bank Transfer, Cheque',
                   address: {
                     '@type': 'PostalAddress',
-                    streetAddress: 'Plot No 36, Nuasahi, Rasulgarh',
+                    streetAddress: '434, Lane 5, Niladri Vihar, Chandrasekharpur',
                     addressLocality: 'Bhubaneswar',
                     addressRegion: 'Odisha',
-                    postalCode: '751010',
+                    postalCode: '751021',
                     addressCountry: 'IN',
                   },
                   geo: {
@@ -515,7 +515,7 @@ export default function RootLayout({
                       name: 'Where is SAI AAKANKSHYA ASSOCIATES located?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'SAI AAKANKSHYA ASSOCIATES is headquartered at Plot No 36, Nuasahi, Rasulgarh, Bhubaneswar, Odisha – 751010. We execute projects pan-India including Delhi, Mumbai, Guwahati, Navi Mumbai, and across Odisha.',
+                        text: 'SAI AAKANKSHYA ASSOCIATES is headquartered at 434, Lane 5, Niladri Vihar, Chandrasekharpur, Bhubaneswar, Odisha – 751021. We execute projects pan-India including Delhi, Mumbai, Guwahati, Navi Mumbai, and across Odisha.',
                       },
                     },
                     {
