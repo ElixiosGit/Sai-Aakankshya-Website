@@ -356,7 +356,7 @@ export default function RootLayout({
                   ],
                   award: [
                     'Authorized HunterDouglas Dealer India',
-                    '11+ Landmark Infrastructure Projects',
+                    '13+ Landmark Infrastructure Projects',
                     '11,000+ sqm Ceiling Execution',
                   ],
                   numberOfEmployees: {
@@ -594,6 +594,12 @@ export default function RootLayout({
                       position: 5,
                       name: 'KIIT University — Bhubaneswar, Odisha',
                       description: 'Architectural ceiling and cladding execution for KIIT University campus.',
+                    },
+                    {
+                      '@type': 'ListItem',
+                      position: 6,
+                      name: 'Tata Steel Jajpur — Jajpur, Odisha',
+                      description: 'Comprehensive industrial infrastructure execution for Tata Steel manufacturing facility in Jajpur.',
                     },
                   ],
                 },

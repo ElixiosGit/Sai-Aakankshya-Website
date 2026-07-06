@@ -121,7 +121,7 @@ export const projects: Project[] = [
     location: 'Lucknow',
     scope: 'Baffle Ceiling',
     area: '2000 sqm',
-    image: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.14 PM (1).jpeg',
+    image: '/assets/images/lucknow-airport-1.jpeg',
     alt: 'CCS International Airport Lucknow — baffle ceiling execution.',
     description: 'Delivered advanced baffle ceiling systems for airport infrastructure with emphasis on acoustics, design uniformity, and large-scale execution quality.',
     client: 'Adani Airports Holding Limited',
@@ -138,6 +138,8 @@ export const projects: Project[] = [
       'Engineered dedicated lighting suspension channels independent of the ceiling grid.'
     ],
     gallery: [
+      '/assets/images/lucknow-airport-1.jpeg',
+      '/assets/images/lucknow-airport-2.jpeg',
       '/assets/images/WhatsApp Image 2026-05-11 at 10.01.14 PM (1).jpeg',
       '/assets/images/Delhi T1.jpeg',
       '/assets/images/WhatsApp Image 2026-05-11 at 10.01.19 PM.jpeg'
@@ -212,11 +214,11 @@ export const projects: Project[] = [
     category: 'Commercial',
     year: '2023',
     location: 'Bhubaneswar',
-    scope: 'Aluminium Facade Work',
+    scope: 'Aluminium Facade Work & LED Lighting Facade',
     area: '1000 sqm',
-    image: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.20 PM.jpeg',
-    alt: 'DN Regalia Mall Bhubaneswar — aluminium facade execution.',
-    description: 'Modern aluminium facade execution for commercial infrastructure with emphasis on contemporary architectural identity.',
+    image: '/assets/images/dn-regalia-1.jpeg',
+    alt: 'DN Regalia Mall Bhubaneswar — aluminium facade and LED lighting execution.',
+    description: 'Modern aluminium facade execution with integrated LED lighting facade system for commercial infrastructure, creating contemporary architectural identity and dynamic visual appeal.',
     client: 'DN Homes Private Limited',
     architect: 'Innate Architectural Consultants',
     duration: '8 Months',
@@ -231,6 +233,11 @@ export const projects: Project[] = [
       'Designed custom recessed aluminium extrusion channels to securely house linear LED luminaires.'
     ],
     gallery: [
+      '/assets/images/dn-regalia-1.jpeg',
+      '/assets/images/dn-regalia-2.jpeg',
+      '/assets/images/dn-regalia-3.jpeg',
+      '/assets/images/dn-regalia-4.jpeg',
+      '/assets/images/dn-regalia-5.jpeg',
       '/assets/images/WhatsApp Image 2026-05-11 at 10.01.20 PM.jpeg',
       '/assets/images/WhatsApp Image 2026-05-11 at 10.01.22 PM.jpeg',
       '/assets/images/WhatsApp Image 2026-05-11 at 10.01.16 PM.jpeg'
@@ -245,7 +252,7 @@ export const projects: Project[] = [
     location: 'Bhubaneswar',
     scope: 'Wall Cladding & Metal Ceiling',
     area: 'Large-scale',
-    image: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.22 PM.jpeg',
+    image: '/assets/images/nandankanan-1.jpeg',
     alt: 'Nandankanan Zoological Park Bhubaneswar — wall cladding and metal ceiling.',
     description: 'Specialized wall cladding and ceiling execution for public infrastructure spaces designed to ensure durability and modern visual appeal.',
     client: 'Forest & Environment Department, Govt of Odisha',
@@ -262,6 +269,8 @@ export const projects: Project[] = [
       'Roll-curved structural framing runners on CNC benders to achieve perfect architectural sweeps.'
     ],
     gallery: [
+      '/assets/images/nandankanan-1.jpeg',
+      '/assets/images/nandankanan-2.jpeg',
       '/assets/images/WhatsApp Image 2026-05-11 at 10.01.22 PM.jpeg',
       '/assets/images/WhatsApp Image 2026-05-11 at 10.01.19 PM.jpeg',
       '/assets/images/WhatsApp Image 2026-05-11 at 10.01.13 PM.jpeg'
@@ -357,6 +366,286 @@ export const projects: Project[] = [
       '/assets/images/WhatsApp Image 2026-05-11 at 10.01.22 PM.jpeg',
       '/assets/images/WhatsApp Image 2026-05-11 at 10.01.19 PM.jpeg',
       '/assets/images/WhatsApp Image 2026-05-11 at 10.01.13 PM.jpeg'
+    ]
+  },
+  {
+    id: 13,
+    name: 'Tata Steel Jajpur',
+    type: 'Industrial Infrastructure',
+    category: 'Commercial',
+    year: '2024',
+    location: 'Jajpur, Odisha',
+    scope: 'Industrial Infrastructure Execution',
+    area: 'Industrial scale',
+    image: '/assets/images/tata-steel-jajpur-1.jpeg',
+    alt: 'Tata Steel Jajpur — industrial infrastructure execution.',
+    description: 'Comprehensive infrastructure execution for Tata Steel manufacturing facility in Jajpur, delivering high-quality industrial construction solutions for one of India\'s leading steel manufacturers.',
+    client: 'Tata Steel Limited',
+    architect: 'Tata Consulting Engineers',
+    duration: '18 Months',
+    challenges: [
+      'Executing infrastructure work within an active heavy industrial manufacturing environment with strict safety protocols.',
+      'Managing coordination with multiple ongoing industrial processes and production schedules.',
+      'Ensuring compliance with rigorous industrial safety standards and quality benchmarks.'
+    ],
+    solutions: [
+      'Implemented dedicated safety management systems with real-time site monitoring and compliance tracking.',
+      'Coordinated phased execution schedules to minimize disruption to ongoing manufacturing operations.',
+      'Utilized industrial-grade materials and construction techniques designed for extreme operational environments.'
+    ],
+    gallery: [
+      '/assets/images/tata-steel-jajpur-1.jpeg',
+      '/assets/images/tata-steel-jajpur-2.jpeg',
+      '/assets/images/tata-steel-jajpur-3.jpeg'
+    ]
+  },
+  {
+    id: 14,
+    name: 'Prameya',
+    type: 'Commercial Infrastructure',
+    category: 'Commercial',
+    year: '2024',
+    location: 'Bhubaneswar, Odisha',
+    scope: 'Complete Commercial Execution',
+    area: 'Large-scale commercial',
+    image: '/assets/images/resort-trisulia-1.jpeg',
+    alt: 'Prameya Bhubaneswar — complete commercial infrastructure execution.',
+    description: 'Comprehensive commercial infrastructure execution for Prameya in Bhubaneswar, delivering premium architectural finishes, modern interiors, and complete civil and finishing works.',
+    client: 'Prameya Development Group',
+    architect: 'Commercial Design Associates',
+    duration: '18 Months',
+    challenges: [
+      'Creating modern commercial infrastructure with seamless integration of functional spaces and aesthetic design.',
+      'Executing multi-phase construction with complex site coordination and logistics management.',
+      'Ensuring high-quality architectural finishes and interior detailing meeting contemporary commercial standards.'
+    ],
+    solutions: [
+      'Implemented phased execution approach coordinating civil, interior, and finishing works simultaneously.',
+      'Utilized premium materials and specialized commercial-grade finishes for durability and visual appeal.',
+      'Established dedicated quality control protocols ensuring consistency across all commercial spaces.'
+    ],
+    gallery: [
+      '/assets/images/resort-trisulia-1.jpeg',
+      '/assets/images/resort-trisulia-2.jpeg',
+      '/assets/images/resort-trisulia-3.jpeg',
+      '/assets/images/resort-trisulia-4.jpeg',
+      '/assets/images/resort-trisulia-5.jpeg',
+      '/assets/images/resort-trisulia-6.jpeg'
+    ]
+  },
+  {
+    id: 15,
+    name: 'SUM Ultimate',
+    type: 'Educational & Sports Infrastructure',
+    category: 'Institutional',
+    year: '2023',
+    location: 'Bhubaneswar, Odisha',
+    scope: 'Interior & Ceiling Execution',
+    area: 'Large-scale institutional',
+    image: '/assets/images/sum-ultimate-1.jpeg',
+    alt: 'SUM Ultimate Bhubaneswar — educational and sports infrastructure execution.',
+    description: 'Premium infrastructure execution for SUM Ultimate in Bhubaneswar, delivering high-quality ceiling systems, interior finishes, and architectural solutions for educational and sports facilities.',
+    client: 'Siksha O Anusandhan (SOA) University',
+    architect: 'SOA Design & Planning Cell',
+    duration: '12 Months',
+    challenges: [
+      'Executing large-scale ceiling and interior works across educational and sports facility spaces.',
+      'Ensuring acoustic optimization for multi-purpose auditorium and sports arena environments.',
+      'Coordinating construction schedules to minimize disruption to ongoing academic activities.'
+    ],
+    solutions: [
+      'Implemented specialized acoustic ceiling panels with sound-dampening properties for optimal audio performance.',
+      'Utilized rapid-installation modular ceiling systems to accelerate project timelines.',
+      'Coordinated night and weekend execution shifts to ensure zero academic schedule interference.'
+    ],
+    gallery: [
+      '/assets/images/sum-ultimate-1.jpeg',
+      '/assets/images/WhatsApp Image 2026-05-18 at 11.15.24 PM.jpeg',
+      '/assets/images/WhatsApp Image 2026-05-18 at 11.15.24 PM (1).jpeg'
+    ]
+  },
+  {
+    id: 16,
+    name: 'Navi Mumbai Airport',
+    type: 'Airport Infrastructure',
+    category: 'Government',
+    year: '2023',
+    location: 'Navi Mumbai, Maharashtra',
+    scope: 'Airport Ceiling & Infrastructure',
+    area: 'Large-scale airport',
+    image: '/assets/images/navi-mumbai-1.jpeg',
+    alt: 'Navi Mumbai Airport — large-scale airport infrastructure execution.',
+    description: 'Major airport infrastructure execution for Navi Mumbai International Airport, delivering comprehensive ceiling systems, architectural finishes, and infrastructure solutions for modern aviation facilities.',
+    client: 'CIDCO / GVK-Airports Authority of India',
+    architect: 'International Airport Design Consortium',
+    duration: '16 Months',
+    challenges: [
+      'Executing large-scale airport infrastructure within strict aviation safety and quality compliance standards.',
+      'Managing complex coordination across multiple terminal zones with overlapping construction activities.',
+      'Ensuring fire-rated, acoustic, and seismic-compliant ceiling installations for critical airport spaces.'
+    ],
+    solutions: [
+      'Deployed specialized aviation-grade ceiling systems meeting international fire safety and acoustic standards.',
+      'Implemented phased zone-wise execution to maintain construction flow across terminal areas.',
+      'Utilized precision laser-guided installation for seamless alignment across expansive concourse ceilings.'
+    ],
+    gallery: [
+      '/assets/images/navi-mumbai-1.jpeg',
+      '/assets/images/navi-mumbai-2.jpeg',
+      '/assets/images/WhatsApp Image 2026-05-19 at 11.49.46 PM.jpeg',
+      '/assets/images/WhatsApp Image 2026-05-19 at 11.49.45 PM (1).jpeg'
+    ]
+  },
+  {
+    id: 17,
+    name: 'Lokpriya Gopinath Bordoloi International Airport',
+    type: 'Airport Infrastructure',
+    category: 'Government',
+    year: '2023',
+    location: 'Guwahati, Assam',
+    scope: 'Airport Ceiling & Infrastructure Systems',
+    area: 'Large-scale airport terminal',
+    image: '/assets/images/guwahati-airport-1.jpeg',
+    alt: 'Guwahati Airport — airport infrastructure and ceiling systems execution.',
+    description: 'Comprehensive airport infrastructure execution for Guwahati International Airport, delivering premium ceiling systems, architectural finishes, and modern terminal infrastructure solutions.',
+    client: 'Airports Authority of India (AAI)',
+    architect: 'AAI Design & Planning Cell',
+    duration: '14 Months',
+    challenges: [
+      'Executing terminal expansion works while maintaining continuous airport operations without passenger disruption.',
+      'Installing specialized ceiling systems meeting stringent aviation fire safety and acoustic performance standards.',
+      'Managing monsoon-season construction challenges in high-humidity northeastern climate conditions.'
+    ],
+    solutions: [
+      'Coordinated night-shift execution schedules to ensure zero operational interference during peak passenger hours.',
+      'Utilized weather-resistant moisture-proof ceiling panels and corrosion-resistant suspension systems.',
+      'Implemented modular pre-assembled ceiling components for rapid installation and minimal on-site time.'
+    ],
+    gallery: [
+      '/assets/images/guwahati-airport-1.jpeg',
+      '/assets/images/guwahati-airport-2.jpeg',
+      '/assets/images/WhatsApp Image 2026-05-19 at 11.49.45 PM.jpeg'
+    ]
+  },
+  {
+    id: 18,
+    name: 'SUM Hospital',
+    type: 'Healthcare Infrastructure',
+    category: 'Institutional',
+    year: '2024',
+    location: 'Phulnakhra, Odisha',
+    scope: 'Hospital Ceiling & Interior Systems',
+    area: 'Large-scale healthcare facility',
+    image: '/assets/images/sum-hospital-1.jpeg',
+    alt: 'SUM Hospital Phulnakhra — healthcare infrastructure and ceiling systems execution.',
+    description: 'Comprehensive healthcare infrastructure execution for SUM Hospital in Phulnakhra, delivering specialized hospital-grade ceiling systems, hygienic finishes, and complete interior solutions designed for modern medical facilities.',
+    client: 'Siksha O Anusandhan (SOA) University - IMS & SUM Hospital',
+    architect: 'Healthcare Design Consultants',
+    duration: '15 Months',
+    challenges: [
+      'Executing hospital-grade infrastructure meeting stringent healthcare hygiene and infection control standards.',
+      'Installing specialized cleanroom-compatible ceiling systems in critical care and operation theater zones.',
+      'Coordinating construction in a partially operational hospital environment without disrupting patient care.'
+    ],
+    solutions: [
+      'Implemented medical-grade antimicrobial ceiling panels with seamless washable surfaces for infection control.',
+      'Utilized modular lay-in ceiling systems allowing easy maintenance access to critical MEP infrastructure.',
+      'Coordinated phased wing-wise execution to isolate construction zones from operational patient care areas.'
+    ],
+    gallery: [
+      '/assets/images/sum-hospital-1.jpeg',
+      '/assets/images/sum-hospital-2.jpeg',
+      '/assets/images/sum-hospital-3.jpeg',
+      '/assets/images/sum-hospital-4.jpeg'
+    ]
+  },
+  {
+    id: 19,
+    name: 'Trimetro Garments',
+    type: 'Industrial Commercial',
+    category: 'Commercial',
+    year: '2024',
+    location: 'Khurda, Odisha',
+    scope: 'Industrial Facade & Ceiling Execution',
+    area: 'Industrial facility',
+    image: '/assets/images/trimetro-garments-1.jpeg',
+    alt: 'Trimetro Garments Khurda — industrial facade and ceiling execution.',
+    description: 'Complete industrial infrastructure execution for Trimetro Garments manufacturing facility in Khurda, delivering robust facade systems, ceiling solutions, and architectural finishes designed for industrial operations.',
+    client: 'Trimetro Garments Private Limited',
+    architect: 'Industrial Design Associates',
+    duration: '10 Months',
+    challenges: [
+      'Executing industrial-grade facade and ceiling systems meeting factory operational requirements.',
+      'Ensuring proper ventilation integration and thermal comfort in manufacturing floor spaces.',
+      'Coordinating construction alongside active garment production operations.'
+    ],
+    solutions: [
+      'Installed industrial-grade metal facade panels with thermal insulation for climate control.',
+      'Utilized high-bay ceiling systems optimized for factory lighting and HVAC distribution.',
+      'Implemented phased execution schedules to minimize disruption to production lines.'
+    ],
+    gallery: [
+      '/assets/images/trimetro-garments-1.jpeg',
+      '/assets/images/trimetro-garments-2.jpeg'
+    ]
+  },
+  {
+    id: 20,
+    name: 'Hunter Douglas 84R Facade System',
+    type: 'Premium Facade Installation',
+    category: 'Commercial',
+    year: '2024',
+    location: 'Pan-India',
+    scope: 'Hunter Douglas 84R Facade Execution',
+    area: 'Commercial facade',
+    image: '/assets/images/hunterdouglas-84r-1.jpeg',
+    alt: 'Hunter Douglas 84R Facade System — premium architectural facade execution.',
+    description: 'Specialized installation of Hunter Douglas 84R premium facade system, showcasing exclusive expertise as the only authorized Hunter Douglas dealer and installer in India for high-performance architectural facade solutions.',
+    client: 'Various Commercial Clients',
+    architect: 'Hunter Douglas Architectural - India',
+    duration: 'Ongoing Projects',
+    challenges: [
+      'Installing precision-engineered Hunter Douglas 84R facade systems requiring specialized technical expertise.',
+      'Ensuring perfect alignment and weather-sealing for premium architectural facade performance.',
+      'Maintaining Hunter Douglas global quality standards for Indian climate conditions.'
+    ],
+    solutions: [
+      'Certified installation teams trained directly by Hunter Douglas technical specialists.',
+      'Utilized specialized Hunter Douglas installation tools and proprietary mounting systems.',
+      'Implemented rigorous quality control protocols meeting international Hunter Douglas standards.'
+    ],
+    gallery: [
+      '/assets/images/hunterdouglas-84r-1.jpeg'
+    ]
+  },
+  {
+    id: 21,
+    name: 'Hotel Angul',
+    type: 'Hospitality Facade',
+    category: 'Commercial',
+    year: '2024',
+    location: 'Angul, Odisha',
+    scope: 'Architectural Facade Execution',
+    area: 'Hotel facade',
+    image: '/assets/images/hotel-angul-1.jpeg',
+    alt: 'Hotel Angul — architectural facade execution.',
+    description: 'Premium architectural facade execution for hotel infrastructure in Angul, delivering modern exterior cladding, weather-resistant finishes, and contemporary aesthetic design for hospitality environments.',
+    client: 'Private Hospitality Group',
+    architect: 'Hospitality Design Consultants',
+    duration: '8 Months',
+    challenges: [
+      'Creating visually striking hotel facade that stands out in the commercial district of Angul.',
+      'Ensuring weather-resistant facade systems capable of withstanding extreme Odisha climate conditions.',
+      'Coordinating facade installation with ongoing hotel interior fit-out activities.'
+    ],
+    solutions: [
+      'Installed premium aluminium composite panel (ACP) facade with contemporary design patterns.',
+      'Utilized weather-resistant structural silicone glazing ensuring long-term durability.',
+      'Implemented phased zone-wise execution coordinating with interior construction schedules.'
+    ],
+    gallery: [
+      '/assets/images/hotel-angul-1.jpeg',
+      '/assets/images/hotel-angul-2.jpeg'
     ]
   }
 ];
