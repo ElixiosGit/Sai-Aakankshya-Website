@@ -146,37 +146,6 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 5,
-    name: 'KIIT University',
-    type: 'Educational Institution',
-    category: 'Institutional',
-    year: '2020',
-    location: 'Bhubaneswar',
-    scope: 'False Ceiling — 600×600 HDI Systems',
-    area: '1000 sqm',
-    image: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.16 PM.jpeg',
-    alt: 'KIIT University Bhubaneswar — HDI false ceiling systems.',
-    description: 'Executed high-quality HDI false ceiling systems for KIIT University, delivering clean architectural finishing and durable execution across educational infrastructure spaces.',
-    client: 'Kalinga Institute of Industrial Technology',
-    architect: 'KIIT Project Engineering Cell',
-    duration: '6 Months',
-    challenges: [
-      'Delivering high-durability ceiling tiles capable of withstanding humid tropical climates.',
-      'Ensuring rapid maintenance access for overhead IT and laboratory networking cables.',
-      'Meeting strict institutional budgetary constraints without compromising visual quality.'
-    ],
-    solutions: [
-      'Installed moisture-resistant high-density lay-in ceiling panels with sealed edges.',
-      'Implemented a fully demountable exposed T-grid suspension system for instant plenum access.',
-      'Optimized tile cut-plans to reduce material wastage to under 3%.'
-    ],
-    gallery: [
-      '/assets/images/WhatsApp Image 2026-05-11 at 10.01.16 PM.jpeg',
-      '/assets/images/WhatsApp Image 2026-05-11 at 10.01.20 PM.jpeg',
-      '/assets/images/WhatsApp Image 2026-05-11 at 10.01.22 PM.jpeg'
-    ]
-  },
-  {
     id: 7,
     name: 'Babasaheb Ambedkar Bus Terminal',
     type: 'Public Infrastructure',
@@ -277,36 +246,6 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 10,
-    name: 'Odisha Mining Corporation',
-    type: 'Corporate Office',
-    category: 'Commercial',
-    year: '2022',
-    location: 'Odisha',
-    scope: 'Office & Interior Work',
-    area: 'Corporate scale',
-    image: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.17 PM.jpeg',
-    alt: 'Odisha Mining Corporation — premium office interior execution.',
-    description: 'Premium office and interior infrastructure execution focused on functional corporate environments and refined interior finishing.',
-    client: 'Odisha Mining Corporation Ltd (OMC)',
-    architect: 'Kothari Associates',
-    duration: '12 Months',
-    challenges: [
-      'Delivering executive boardroom acoustic ceilings and specialized timber-finish wall panelling.',
-      'Integrating state-of-the-art AV (Audio-Visual) conferencing equipment seamlessly into walls and ceilings.',
-      'Meeting aggressive corporate occupation deadlines with multi-agency site coordination.'
-    ],
-    solutions: [
-      'Engineered micro-perforated composite acoustic panelling with an authentic natural walnut veneer finish.',
-      'Built motorized concealed ceiling drop-down housings for projectors and teleconferencing monitors.',
-      'Implemented daily micro-scheduling and dedicated site management teams to ensure timely completion.'
-    ],
-    gallery: [
-      '/assets/images/WhatsApp Image 2026-05-11 at 10.01.17 PM.jpeg',
-      '/assets/images/WhatsApp Image 2026-05-11 at 10.01.16 PM.jpeg'
-    ]
-  },
-  {
     id: 11,
     name: 'Mission Shakti Café, Anandvan',
     type: 'Public Hospitality',
@@ -335,37 +274,6 @@ export const projects: Project[] = [
       '/assets/images/WhatsApp Image 2026-05-11 at 10.01.16 PM.jpeg',
       '/assets/images/WhatsApp Image 2026-05-11 at 10.01.20 PM.jpeg',
       '/assets/images/WhatsApp Image 2026-05-11 at 10.01.22 PM.jpeg'
-    ]
-  },
-  {
-    id: 12,
-    name: 'OPTCL / Tata Power / Power Grid',
-    type: 'Power Sector',
-    category: 'Government',
-    year: '2021',
-    location: 'Pan-India',
-    scope: 'Civil Construction Works',
-    area: 'Multiple sites',
-    image: '/assets/images/WhatsApp Image 2026-05-11 at 10.01.22 PM.jpeg',
-    alt: 'Civil infrastructure — OPTCL, Tata Power, Power Grid.',
-    description: 'Executed civil infrastructure projects for major power and utility organizations with focus on reliability, structural quality, and execution efficiency.',
-    client: 'OPTCL / Tata Power / PGCIL',
-    architect: 'Central Power Engineering Utility',
-    duration: '24 Months (Multi-stage)',
-    challenges: [
-      'Constructing heavy civil foundations and control room structures in remote, difficult-to-access terrain.',
-      'Strict compliance with high-voltage electrical clearance safety regulations during construction.',
-      'Ensuring absolute structural stability of control buildings housing critical grid infrastructure.'
-    ],
-    solutions: [
-      'Established mobile on-site concrete batching plants to ensure continuous high-grade mix pouring.',
-      'Mandated specialized high-voltage safety training and protective grounding protocols for all civil crews.',
-      'Utilized high-strength reinforced concrete framing with specialized damp-proofing and seismic design.'
-    ],
-    gallery: [
-      '/assets/images/WhatsApp Image 2026-05-11 at 10.01.22 PM.jpeg',
-      '/assets/images/WhatsApp Image 2026-05-11 at 10.01.19 PM.jpeg',
-      '/assets/images/WhatsApp Image 2026-05-11 at 10.01.13 PM.jpeg'
     ]
   },
   {

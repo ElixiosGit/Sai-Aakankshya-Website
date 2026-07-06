@@ -15,7 +15,7 @@ const services = [
     number: '01',
     title: 'False Ceiling Systems',
     description: 'Precision-executed ceiling systems across airports, institutions, and commercial spaces — from gypsum and HDI systems to linear, baffle, metal, and aluminium ceilings at any scale.',
-    items: ['Gypsum Ceiling Systems', 'Linear & Baffle Ceilings', 'Metal & Aluminium Ceilings', 'HDI Ceiling Systems (600×600)'],
+    items: ['Hunter Douglas Ceiling Systems', 'Gypsum Ceiling Systems', 'Linear & Baffle Ceilings', 'Metal & Aluminium Ceilings', 'HDI Ceiling Systems (600×600)'],
   },
   {
     number: '02',
